@@ -11045,3 +11045,51 @@ button.close:focus{
     border:1px solid #0857C3;
 }
 
+.app-btn-back{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.title-detail-field{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 13px;
+    color: #0857C3;
+}
+
+.value-detail-field{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+.app-text-span{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.container-data-user {
+    background: rgba(156, 198, 255, 0.2);
+    padding: 24px;
+    border-radius: 24px;
+}
+
+.container-title-data-user {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+}
+
+.container-data {
+    padding: 30px;
+    border: 1px solid #9CC6FF;
+    border-radius: 24px;
+}
+
+
