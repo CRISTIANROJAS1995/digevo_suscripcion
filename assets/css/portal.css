@@ -9936,13 +9936,19 @@ button.close:focus{
 }
 .app-btn-secondary{
     background:#fff;
-    color:#5d6778;
-    border:1px solid #bcc1cb
+    color:#0857C3;
+    font-family: 'Poppins';
+    font-weight: 600;
+    size: 16px;
+    line-height: 24px;
+    text-align: center;
+    border:1px solid #0857C3;
+    border-radius: 18px;
 }
 .app-btn-secondary:hover{
-    color:#0857C3;
+    color:#fff;
     border:1px solid #0857C3;
-    background:#fff
+    background:#0857C3
 }
 .btn-light{
     background:#f5f6fe;
@@ -10680,12 +10686,21 @@ button.close:focus{
     font-size:.875rem
 }
 .app-card-orders-table .table .cell{
-    border-color:#e7e9ed;
-    color:#5d6778;
-    vertical-align:middle
+    /* border-color:#e7e9ed; */
+    border: none;
+    color:#000000;
+    vertical-align:middle;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14px;
 }
 .app-card-orders-table .cell span{
-    display:inline-block
+    display:inline-block;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
 }
 .app-card-orders-table .cell .note{
     display:block;
@@ -10710,11 +10725,11 @@ button.close:focus{
 .app-nav-tabs .nav-link{
     color:#5d6778;
     font-size:.875rem;
-    font-weight:bold
+    font-weight:bold;
 }
 .app-nav-tabs .nav-link.active{
     color:#0857C3;
-    border-bottom:2px solid #0857C3
+    border-bottom:2px solid #0857C3;
 }
 .app-nav-tabs .nav-link.active:hover{
     background:none
@@ -10993,5 +11008,40 @@ button.close:focus{
 /* custom styles */
 
 .title-page {
-
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: #022C65;
 }
+
+.search-text {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: rgba(0, 0, 0, 0.4);
+    padding: 16px;
+    border: 1px solid rgba(2, 44, 101, 0.4);
+    border-radius: 8px;
+    width: 380px;
+}
+
+.title-table {
+    font-family: 'Poppins' !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 14px !important;
+    color: #1E448C !important;
+}
+
+.app-btn-detail-table{
+    background: #0857C3;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 12px;
+    border:1px solid #0857C3;
+}
+

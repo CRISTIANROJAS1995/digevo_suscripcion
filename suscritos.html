@@ -28,67 +28,62 @@
 		<div class="app-content pt-3 p-md-3 p-lg-4">
 			<div class="container-xl">
 
-				<div class="row g-3 mb-4 align-items-center justify-content-between">
+				<div class="row g-3 mb-5 align-items-center justify-content-between">
 					<div class="col-auto">
-						<h1 class="app-page-title mb-0">Mis Suscritos</h1>
+						<h1 class="title-page mb-0">Mis Suscritos</h1>
 					</div>
 					<div class="col-auto">
 						<div class="page-utilities">
 							<div class="row g-2 justify-content-start justify-content-md-end align-items-center">
 								<div class="col-auto">
-									<form class="table-search-form row gx-1 align-items-center">
-										<div class="col-auto">
-											<input type="text" id="search-orders" name="searchorders"
-												class="form-control search-orders" placeholder="Search">
-										</div>
-										<div class="col-auto">
-
-										</div>
+									<form class="app-search-form">   
+										<input type="text" placeholder="Búsqueda por RUT o nota de pedido" name="search" class="form-control search-text">
+										<button type="submit" class="btn search-btn btn-primary" value="Search"><i class="fas fa-search"></i></button> 
 									</form>
-
 								</div><!--//col-->
-								<div class="col-auto">
-								</div>
-								<div class="col-auto">
-								</div>
 							</div><!--//row-->
 						</div><!--//table-utilities-->
 					</div><!--//col-auto-->
 				</div><!--//row-->
+				<div class="row align-items-center justify-content-between">
+					<div class="col-lg-8">
+						<nav id="orders-table-tab"
+							class="orders-table-tab app-nav-tabs nav shadow-sm flex-column flex-sm-row mb-4">
 
+							<!-- <select class="form-select w-auto">
+								<option selected value="option-1">Ultimos 3 meses</option>
+								<option value="option-2">Activos</option>
+								<option value="option-3">Pendientes de pago</option>
+								<option value="option-4">Canceladas</option>
+							</select> -->
 
-				<nav id="orders-table-tab"
-					class="orders-table-tab app-nav-tabs nav shadow-sm flex-column flex-sm-row mb-4">
-					<select class="form-select w-auto">
-						<option selected value="option-1">Ultimos 3 meses</option>
-						<option value="option-2">Activos</option>
-						<option value="option-3">Pendientes de pago</option>
-						<option value="option-4">Canceladas</option>
-
-					</select>
-
-					<a class="flex-sm-fill text-sm-center nav-link active" id="orders-all-tab" data-bs-toggle="tab"
-						href="#orders-all" role="tab" aria-controls="orders-all" aria-selected="true">Ver todos</a>
-					<a class="flex-sm-fill text-sm-center nav-link" id="orders-paid-tab" data-bs-toggle="tab"
-						href="#orders-paid" role="tab" aria-controls="orders-paid" aria-selected="false">Activas</a>
-					<a class="flex-sm-fill text-sm-center nav-link" id="orders-pending-tab" data-bs-toggle="tab"
-						href="#orders-pending" role="tab" aria-controls="orders-pending"
-						aria-selected="false">Pendientes de pago</a>
-					<a class="flex-sm-fill text-sm-center nav-link" id="orders-cancelled-tab" data-bs-toggle="tab"
-						href="#orders-cancelled" role="tab" aria-controls="orders-cancelled"
-						aria-selected="false">Canceladas</a>
-					<a class="btn app-btn-secondary" href="#">
-						<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download me-1"
-							fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd"
-								d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-							<path fill-rule="evenodd"
-								d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-						</svg>
-						Exportar
-					</a>
-				</nav>
-
+							<a class="flex-sm-fill text-sm-center nav-link active" id="orders-all-tab" data-bs-toggle="tab"
+								href="#orders-all" role="tab" aria-controls="orders-all" aria-selected="true">Ver todos</a>
+							<a class="flex-sm-fill text-sm-center nav-link" id="orders-paid-tab" data-bs-toggle="tab"
+								href="#orders-paid" role="tab" aria-controls="orders-paid" aria-selected="false">Activas</a>
+							<a class="flex-sm-fill text-sm-center nav-link" id="orders-pending-tab" data-bs-toggle="tab"
+								href="#orders-pending" role="tab" aria-controls="orders-pending"
+								aria-selected="false">Pendientes de pago</a>
+							<a class="flex-sm-fill text-sm-center nav-link" id="orders-cancelled-tab" data-bs-toggle="tab"
+								href="#orders-cancelled" role="tab" aria-controls="orders-cancelled"
+								aria-selected="false">Canceladas</a>
+							
+						</nav>
+					</div>
+					<div class="col-auto">
+						<a class="btn app-btn-secondary" href="#">
+							<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download me-1"
+								fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd"
+									d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+								<path fill-rule="evenodd"
+									d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+							</svg>
+							Exportar
+						</a>
+					</div>
+				</div>
+				<br>
 
 				<div class="tab-content" id="orders-table-tab-content">
 					<div class="tab-pane fade show active" id="orders-all" role="tabpanel"
@@ -99,15 +94,15 @@
 									<table class="table app-table-hover mb-0 text-left">
 										<thead>
 											<tr>
-												<th class="cell">N° Suscripcion</th>
-												<th class="cell">Titular</th>
-												<th class="cell">Rut</th>
-												<th class="cell">Plan</th>
-												<th class="cell">Nota Pedido</th>
-												<th class="cell">N° Envios</th>
-												<th class="cell">Valor Total</th>
-												<th class="cell">Ult. Pago</th>
-												<th class="cell">Estado</th>
+												<th class="title-table cell">N° Suscripcion</th>
+												<th class="title-table cell">Titular</th>
+												<th class="title-table cell">Rut</th>
+												<th class="title-table cell">Plan</th>
+												<th class="title-table cell">Nota Pedido</th>
+												<th class="title-table cell">N° Envios</th>
+												<th class="title-table cell">Valor Total</th>
+												<th class="title-table cell">Ult. Pago</th>
+												<th class="title-table cell">Estado</th>
 												<th class="cell"></th>
 											</tr>
 										</thead>
@@ -125,8 +120,14 @@
 
 												<td class="cell"><span class="badge bg-success">Activa</span></td>
 
-												<td class="cell"><a class="btn-sm app-btn-secondary"
-														href="#">Detalles</a>
+												<td class="cell">
+													<a class="btn app-btn-detail-table" href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="margin-right: 5px;" class="bi bi-eye" viewBox="0 0 16 16">
+															<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+															<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+														  </svg>
+														Detalles
+													</a>
 												</td>
 											</tr>
 											<tr>
@@ -142,8 +143,14 @@
 
 												<td class="cell"><span class="badge bg-warning">Suspendida</span></td>
 
-												<td class="cell"><a class="btn-sm app-btn-secondary"
-														href="#">Detalles</a>
+												<td class="cell">
+													<a class="btn app-btn-detail-table" href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="margin-right: 5px;" class="bi bi-eye" viewBox="0 0 16 16">
+															<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+															<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+														  </svg>
+														Detalles
+													</a>
 												</td>
 											</tr>
 											<tr>
@@ -159,8 +166,14 @@
 
 												<td class="cell"><span class="badge bg-success">Activa</span></td>
 
-												<td class="cell"><a class="btn-sm app-btn-secondary"
-														href="#">Detalles</a>
+												<td class="cell">
+													<a class="btn app-btn-detail-table" href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="margin-right: 5px;" class="bi bi-eye" viewBox="0 0 16 16">
+															<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+															<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+														  </svg>
+														Detalles
+													</a>
 												</td>
 											</tr>
 
@@ -177,8 +190,14 @@
 
 												<td class="cell"><span class="badge bg-success">Activa</span></td>
 
-												<td class="cell"><a class="btn-sm app-btn-secondary"
-														href="#">Detalles</a>
+												<td class="cell">
+													<a class="btn app-btn-detail-table" href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="margin-right: 5px;" class="bi bi-eye" viewBox="0 0 16 16">
+															<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+															<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+														  </svg>
+														Detalles
+													</a>
 												</td>
 											</tr>
 
@@ -195,8 +214,14 @@
 
 												<td class="cell"><span class="badge bg-danger">Cancelada</span></td>
 
-												<td class="cell"><a class="btn-sm app-btn-secondary"
-														href="#">Detalles</a>
+												<td class="cell">
+													<a class="btn app-btn-detail-table" href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="margin-right: 5px;" class="bi bi-eye" viewBox="0 0 16 16">
+															<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+															<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+														  </svg>
+														Detalles
+													</a>
 												</td>
 											</tr>
 
@@ -213,8 +238,14 @@
 
 												<td class="cell"><span class="badge bg-danger">Cancelada</span></td>
 
-												<td class="cell"><a class="btn-sm app-btn-secondary"
-														href="#">Detalles</a>
+												<td class="cell">
+													<a class="btn app-btn-detail-table" href="#">
+														<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="margin-right: 5px;" class="bi bi-eye" viewBox="0 0 16 16">
+															<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+															<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+														  </svg>
+														Detalles
+													</a>
 												</td>
 											</tr>
 
@@ -441,7 +472,7 @@
 		</div><!--//app-content-->
 
 		<footer class="app-footer">
-			<div class="container text-center py-3">
+			<div class="container text-center py-3 float-end">
 				<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
 				<small class="copyright">Powered <span class="sr-only">love</span> by DIGEVO</small>
 			</div>
@@ -452,7 +483,6 @@
 	<!-- Javascript -->
 	<script src="assets/plugins/popper.min.js"></script>
 	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-
 
 	<!-- Page Specific JS -->
 	<script src="assets/js/app.js"></script>
