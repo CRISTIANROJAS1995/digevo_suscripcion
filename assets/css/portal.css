@@ -11092,4 +11092,24 @@ button.close:focus{
     border-radius: 24px;
 }
 
+.container-all-data {
+    background: #E8F1FF;
+    padding: 80px;
+    border-radius: 18px;
+}
+
+.title-search{
+    font-family: 'Poppins'!important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    color: #000000 !important;
+}
+
+
+.input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu), .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3){
+    border: 1px solid #61D2FF !important;
+    border-radius: 8px !important;
+    padding: 16px !important;
+}
+
 

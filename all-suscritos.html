@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Portal de Suscripción</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Portal - Bootstrap 5 Admin Dashboard Template For Developers">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- FontAwesome JS-->
+	<script defer src="assets/plugins/fontawesome/js/all.min.js"></script>
+
+	<!-- App CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/portal.css">
+
+</head>
+
+<body class="app">
+
+	<div class="app-wrapper">
+
+		<div class="app-content pt-3 p-md-3 p-lg-4">
+			<div class="container-xl">
+
+				<div class="row g-3 mb-4 align-items-center justify-content-between">
+					<div class="col-auto">
+						<h1 class="title-page mb-0">Todos los suscritos</h1>
+					</div>
+				</div>
+
+				<div class="container-all-data mb-4">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-xxl-4 col-xl-6 col-lg-12 col-md-12 col-sm-12">
+							<div class="row">
+								<label for="rut" class="form-label title-search">Ingresa el RUT o nota de pedido:</label>
+								<div class="input-group col-md-4">
+									<input class="form-control py-2 border-right-0 border title-search " type="search" value="12345678-9" id="rut">
+									<!-- <span class="input-group-append">
+										<button class="btn btn-outline-secondary border-left-0 border" type="button">
+											<i class="fa fa-search fa-1x"></i>
+										</button>
+									  </span> -->
+								</div>
+								<p class="text-muted text-end">Ej: 00000000-0</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<p class="container-title-data-user">Resultados de la busqueda</p>
+				<br>
+				<div class="tab-content" id="orders-table-tab-content">
+					<div class="tab-pane fade show active" id="orders-all" role="tabpanel"
+						aria-labelledby="orders-all-tab">
+						<div class="app-card app-card-orders-table shadow-sm mb-5">
+							<div class="app-card-body">
+								<div class="table-responsive">
+									<table class="table app-table-hover mb-0 text-left">
+										<thead>
+											<tr>
+												<th scope="col" class="title-table cell">TITULAR</th>
+												<th scope="col" class="title-table cell">RUT</th>
+												<th scope="col" class="title-table cell">PLAN</th>
+												<th scope="col" class="title-table cell">NOTA PEDIDO</th>
+												<th scope="col" class="title-table cell">NO° ENVÍOS</th>
+												<th scope="col" class="title-table cell">VALOR TOTAL</th>
+												<th scope="col" class="title-table cell">ÚLT.PAGO</th>
+												<th scope="col" class="title-table cell">ESTADO</th>
+												<th scope="col" class="title-table cell">ACCIONES</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="cell">Fernando Castillo</td>
+												<td class="cell">12.345.678-9</td>
+												<td class="cell">LC Acuvue 2 Plan diario por 3 meses</td>
+												<td class="cell">12345678901</td>
+												<td class="cell">0 de 2</td>
+												<td class="cell">$240.000</td>
+												<td class="cell">$120.000</td>
+												<td class="cell"><span class="badge bg-success">Activa</span></td>
+												<td class="cell">
+													<a class="btn app-btn-detail-table" href="./detail-suscritos.html">
+														<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="margin-right: 5px;" class="bi bi-eye" viewBox="0 0 16 16">
+															<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+															<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+														  </svg>
+														Detalles
+													</a>
+												</td>
+											</tr>	
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<footer class="app-footer">
+			<div class="container text-end py-3 float-end">
+				<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+				<small class="copyright">Powered <span class="sr-only">love</span> by DIGEVO</small>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Javascript -->
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Page Specific JS -->
+	<script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
