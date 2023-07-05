@@ -1,3 +1,5 @@
+/* import font Poppins of Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root{
     --bs-blue: #0d6efd;
@@ -500,7 +502,9 @@ progress{
     margin-right:auto;
     margin-left:auto
 }
-@media(min-width: 576px){
+
+/* Reponsive */
+/* @media(min-width: 576px){
     .container-sm,.container{
         max-width:540px
     }
@@ -524,7 +528,8 @@ progress{
     .container-xxl,.container-xl,.container-lg,.container-md,.container-sm,.container{
         max-width:1320px
     }
-}
+} */
+
 .row{
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
@@ -10409,24 +10414,28 @@ button.close:focus{
         background:rgba(0,0,0,.35)
     }
 }
-@media(min-width: 1200px){
+
+/* app-wrapper responsive */
+/* @media(min-width: 1200px){
     .app-wrapper{
         margin-left:250px
     }
-}
+} */
+
 .app{
     min-height:100vh;
     height:100%;
     width:100%;
     background:#fff;
-    padding-top:56px;
+    /* padding-top:56px; */
     overflow-x:hidden
 }
 .app-footer .copyright{
     font-size:.8125rem
 }
 .app-wrapper{
-    transition:all .4s ease-in-out
+    transition:all .4s ease-in-out;
+    margin: 2em;
 }
 @media(prefers-reduced-motion: reduce){
     .app-wrapper{
@@ -10980,4 +10989,9 @@ button.close:focus{
         width:100%
     }
 }
- 
+
+/* custom styles */
+
+.title-page {
+
+}
